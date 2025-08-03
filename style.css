@@ -56,22 +56,27 @@ html, body {
 #home {
     width: 100%;
     background-color: white;
-    padding-top: 12vh; /* To avoid overlap with fixed header */
+    padding-top: 40vh; /* To avoid overlap with fixed header */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .pic {
-    height: 400px;
-    width: 400px;
-    padding-top: 100px;
+    height: 300px;
+    width: 300px;
 }
 
-.pic{
-    
-}
 
 .pic img {
     width: 100%;
@@ -79,3 +84,22 @@ html, body {
     object-fit: cover;
     border-radius: 50%;
 }
+
+.my-info{
+
+    text-align: center;
+
+}
+
+.my-info h1{
+    font-size: 900;
+    margin-top: 50px;
+    letter-spacing: 2px;
+}
+
+.my-info h4{
+    font-size: 200;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
