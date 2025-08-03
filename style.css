@@ -56,13 +56,8 @@ html, body {
 #home {
     width: 100%;
     background-color: white;
-    padding-top: 40vh; /* To avoid overlap with fixed header */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    
-
+    padding-top: 30vh; /* To avoid overlap with fixed header */
+   
 }
 
 .container{
@@ -92,7 +87,7 @@ html, body {
 }
 
 .my-info h1{
-    font-size: 900;
+    font-size: 50px;
     margin-top: 50px;
     letter-spacing: 2px;
 }
@@ -102,4 +97,98 @@ html, body {
     letter-spacing: 2px;
     margin-bottom: 50px;
 }
+.social-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
+
+.social-links li{
+    list-style: none;
+}
+
+.social-links li i{
+    color: #171717;
+    font-size: 40px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+
+}
+
+.arrow-down{
+    font-size: 40px;
+    color: #171717;
+}
+
+/* about me */
+
+#about-me{
+    margin-top: 100px;
+    padding: 200px;
+    background-color: #F7F7F7;
+    margin-bottom: 100px;
+}
+
+.about-info{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: #333333;
+}
+
+.about-info h1{
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+
+.about-info h2{
+
+    line-height: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+/* career */
+
+
+
+
+
+
+
+
+/* contact */
+#contact{
+    background-color: #171717;
+    height: 20vh;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}
+
+.copyright{
+    flex-basis: 50%;
+    font-size: 15px;
+    font-weight: normal;
+    /* text-align: center; */
+    
+}
+
+.contact-details{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.contact-details h4 {
+    margin: 5px 0;
+    font-size: 15px;
+}

@@ -6,8 +6,13 @@
     <title>Personal Profile</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+
 </head>
 <body>
+
+    <!-- header -->
     <section id="header">
         <img src="1.png" alt="logo">
         <div class="header-list">
@@ -20,6 +25,8 @@
         </div>
     </section>
 
+    <!-- home -->
+
     <section id="home">
         <div class="container">
             <div class="pic">
@@ -29,12 +36,12 @@
                 <h1>DEBOSMITA SADHUKHAN</h1>
                 <h4>WEB DEVELOPMENT STUDENT FROM KOLKATA,INDIA</h4>
                 <ul class="social-links">
-                    <li><a href="https://github.com/Debosmita053">Github<i class="fa-brands fa-square-github"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/debosmita-sadhukhan-14b1b62ab/">Linkedln<i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a href="https://www.instagram.com/itsme_debosmita_09/">Instagram<i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a target="_blank" href="https://github.com/Debosmita053"><i class="fa-brands fa-square-github"></i></a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/debosmita-sadhukhan-14b1b62ab/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/itsme_debosmita_09/"><i class="fa-brands fa-square-instagram"></i></a></li>
                 </ul>
 
-                <a href=""><i class="fa-solid fa-angles-down"></i></a>
+                <a class="arrow-down" href="#about-me"><i class="fa-solid fa-angles-down"></i></a>
             </div>
 
         </div>
@@ -42,17 +49,33 @@
 
     <!-- About Me -->
     <section id="about-me">
-        <!-- Add about me content here -->
+        <div class="about-info">
+            <h1>ABOUT ME</h1>
+            <h2>I am an aspiring web developer interested in programming, technology, and minimalist design. Besides these interests, I love to cook,watch movies & television, and read.</h2>
+        </div>
     </section>
 
     <!-- Career -->
     <section id="career">
-        <!-- Add career content here -->
+        
     </section>
 
     <!-- Contact -->
     <section id="contact">
-        <!-- Add contact content here -->
+        <div class="copyright">
+            <h4>Copyright <i class="fa-regular fa-copyright"></i>Made by Debosmita Sadhukhan,2025</h4>
+        </div>
+        <div class="contact-details">
+            <h4><i class="fa-solid fa-location-dot"></i>Kolkata,India</h4>
+            <h4><i class="fa-regular fa-envelope"></i>debosmitasadhukhan051@gmail.com</h4>
+        </div>
     </section>
 </body>
+<script>
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+
+</script>
 </html>
