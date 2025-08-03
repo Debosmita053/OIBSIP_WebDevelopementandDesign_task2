@@ -154,6 +154,25 @@ html, body {
     font-weight: 100;
 }
 
+.tab-titles{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center
+    
+}
+
+.tab-links{
+
+    height: 500px;
+    width: 400px;
+    border: 2px solid #171717;
+    flex-basis: 30%;
+    margin: 30px 100px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+
 /* career */
 
 
