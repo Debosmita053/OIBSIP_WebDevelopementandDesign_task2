@@ -17,12 +17,12 @@ html, body {
     flex-wrap: wrap;
     position: fixed;
     top: 0;
-    background-color: #171717;
+    background-color: #07080A;
     z-index: 1000;
 }
 
 #header img {
-    width: 180px;
+    width: 150px;
     height: 70px;
     margin-left: 200px;
 }
