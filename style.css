@@ -171,8 +171,8 @@ html, body {
 /* career */
 
 #career{
-    margin-top: 100px;
-    padding: 100px;
+    margin-top: 10px;
+    padding: 50px;
     /* background-color: #ddd8d8a6; */
      display: flex;
     align-items: center;
@@ -182,11 +182,12 @@ html, body {
 
 }
 
-.about-info h1{
+#career h1{
     letter-spacing: 3px;
     font-weight: 200;
     font-size: 60px;
-    margin-bottom: 100px;
+    text-align: center;
+    /* margin-bottom: 100px; */
 }
 
 /* .tab-titles{
@@ -202,23 +203,38 @@ html, body {
      display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     /* justify-content: space-between; */
     text-align: center;
     color: #333333;
     list-style: none;
+    gap: 80px;
 }
 
-.tab-titles ul li{
+/* .tab-titles ul li{
     gap: 20px;
-}
+} */
 
-.tab-titles button{
+.tab-titles button {
     background-color: #07080A;
     color: #ffffff;
     border: none;
     height: 50px;
-    width: 100px;
-    border-radius: 20px;
+    min-width: 120px; /* Give buttons a minimum width */
+    padding: 0 20px; /* Add horizontal padding */
+    border-radius: 25px; /* More rounded corners */
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.tab-titles button:hover {
+    background-color: #ffffff; /* Use your accent color */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+    border: 2px solid #07080A;
+    color: #07080A;
 }
 
 
