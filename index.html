@@ -109,15 +109,18 @@
 let sidenav=document.querySelector('.side-nav');
 let menubtn=document.querySelector('.menu-bar');
 
-menubtn.addEventListener("click",function(event){
-    // sidenav.style.right="-350px";
-    // console.log("hi");
-    if(sidenav.style.right == "-350px")
-    {
-        sidenav.style.right="0px";
+menubtn.addEventListener("click", function (event) {
+    event.stopPropagation(); // Prevent body click from firing
+    if (sidenav.style.right === "0px") {
+        sidenav.style.right = "-350px"; // Close
+    } else {
+        sidenav.style.right = "0px"; // Open
     }
-    
 });
+
+sidenav.addEventListener("click",function(event){
+    event.stopPropagation();
+})
 
 document.body.addEventListener("click",function(event){
     // console.log("bye");
