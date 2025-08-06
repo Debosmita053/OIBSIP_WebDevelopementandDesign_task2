@@ -107,15 +107,22 @@
 });
 
 let sidenav=document.querySelector('.side-nav');
-let menubtn=document.querySelector('.menu-btn');
+let menubtn=document.querySelector('.menu-bar');
 
 menubtn.addEventListener("click",function(event){
-    sidenav.style.right="-350px";
+    // sidenav.style.right="-350px";
+    // console.log("hi");
     if(sidenav.style.right == "-350px")
     {
         sidenav.style.right="0px";
     }
-    else{
+    
+});
+
+document.body.addEventListener("click",function(event){
+    // console.log("bye");
+     if(sidenav.style.right == "0px")
+    {
         sidenav.style.right="-350px";
     }
 })

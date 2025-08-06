@@ -66,7 +66,8 @@ html, body {
             cursor: pointer;
             display: none;
             /* padding-right: 20px; */
-            
+            z-index: 9999;
+            position: relative;
         }
 
 
@@ -79,7 +80,7 @@ html, body {
     right: -350px;
     top: 0;
     background-color: #07080A;
-    z-index: 2;
+    z-index: 999;
     transition: 0.5s;
     }
 
