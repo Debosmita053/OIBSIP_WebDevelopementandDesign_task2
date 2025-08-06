@@ -22,12 +22,23 @@
                 <li><a href="#career">Career</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-
+        </div> 
         <div class="menu-bar">
             <i class="fa-solid fa-bars"></i>
         </div>
-    </div>
+    
     </section>
+
+    <!-- nav -->
+
+    <nav class="side-nav">
+        <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- home -->
 
@@ -94,6 +105,20 @@
 	speed: 500,
 	speedAsDuration: true
 });
+
+let sidenav=document.querySelector('.side-nav');
+let menubtn=document.querySelector('.menu-btn');
+
+menubtn.addEventListener("click",function(event){
+    sidenav.style.right="-350px";
+    if(sidenav.style.right == "-350px")
+    {
+        sidenav.style.right="0px";
+    }
+    else{
+        sidenav.style.right="-350px";
+    }
+})
 
 </script>
 </html>
