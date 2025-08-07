@@ -97,17 +97,20 @@ nav ul li a {
 
 /* Home Section */
 #home {
-    width: 100%;
+     max-width: 100%;
+    overflow-x: hidden;
     background-color: white;
     padding-top: 30vh; /* To avoid overlap with fixed header */
    
 }
 
-.container{
+.container {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .pic {
@@ -231,18 +234,25 @@ nav ul li a {
     text-align: center;
     color: #333333;
 } */
+ .tab-titles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 
 .tab-titles ul{
-     display: flex;
+    
+    display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    text-align: center;
-    color: #333333;
+    gap: 30px; /* reduce from 80px for better mobile layout */
+    padding: 0;
     list-style: none;
-    gap: 80px;
 }
+
+
 
 /* .tab-titles ul li{
     gap: 20px;
@@ -335,7 +345,7 @@ nav ul li a {
 
 @media (max-width: 768px) {
     .header-list ul {
-        position: fixed;
+        /* position: fixed;
         top: 80px;
         left: -100%;
         width: 100%;
@@ -345,7 +355,8 @@ nav ul li a {
         align-items: center;
         justify-content: center;
         gap: 40px;
-        transition: left 0.5s ease;
+        transition: left 0.5s ease; */
+        display: none;
     }
     
     .header-list ul.active {
@@ -385,7 +396,6 @@ nav ul li a {
     
     #contact {
         flex-direction: column;
-        flex-basis: 100%;
         text-align: center;
         padding: 30px 5%;
     }
