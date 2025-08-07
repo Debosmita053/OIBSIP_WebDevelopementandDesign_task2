@@ -366,6 +366,11 @@ nav ul li a {
      .menu-bar {
         display: block;
         padding-right: 20px;
+        /* width: 250px; */
+    }
+
+    .side-nav{
+        width: 200px;
     }
     
     .pic {
@@ -404,8 +409,6 @@ nav ul li a {
         flex-basis: 100%;
         text-align: center;
     }
-
-    
     
     .copyright {
         margin-bottom: 20px;
@@ -424,6 +427,12 @@ nav ul li a {
     .social-links li i {
         font-size: 1.5rem;
         margin: 0 10px;
+
+
+    }
+
+    .about-info{
+        text-align: center;
     }
     
     .about-info h1, #career h1 {
@@ -439,4 +448,16 @@ nav ul li a {
         height: 40px;
         font-size: 0.9rem;
     }
+
+    .copyright,.contact-details{
+        flex-basis: 100%;
+    }
+
+    #contact {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        height: auto;
+    }
+
 }
